@@ -1,4 +1,4 @@
-var fortunes = [
+let fortunes = [
     "Победи свои страхи, или они победят тебя.",
     "Рекам нужны истоки.",
     "Не бойся неведомого.",
@@ -7,3 +7,8 @@ var fortunes = [
 ];
 
 exports.fortunes = fortunes;
+exports.getRandomFortune = () => {
+    let randomFortune =
+        fortunes[Math.floor(Math.random() * fortunes.length)];
+    return randomFortune;
+};
