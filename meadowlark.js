@@ -50,18 +50,18 @@ app.get('/tours/request-group-rate', function (req, res) {
 });
 
 // Обобщенный обработчик 404 (промежуточное ПО)
-app.use(function (req, res, next) {
+app.use(function (req, res) {
     res.status(404);
     res.render('404');
 });
 // Обработчик ошибки 500 (промежуточное ПО)
-app.use(function (err, req, res, next) {
+app.use(function (err, req, res) {
     console.error(err.stack);
     res.status(500);
     res.render('500');
 });
 
 app.listen(app.get('port'), function () {
-    console.log('Express запущен на http://localhost:' +
-        app.get('port') + '; нажмите Ctrl+C для завершения.');
+    console.log('Express is running on http://localhost:' +
+        app.get('port') + '; press Ctrl+C for closing.');
 });

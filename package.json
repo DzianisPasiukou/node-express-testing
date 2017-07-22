@@ -4,7 +4,10 @@
   "description": "",
   "main": "meadowlark.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node meadowlark.js",
+    "start:watch": "nodemon --debug meadowlark.js",
+    "build": "grunt",
+    "test": "mocha -u tdd -R spec qa/*-unit.js"
   },
   "author": "",
   "license": "ISC",
@@ -13,8 +16,15 @@
     "express-handlebars": "^3.0.0"
   },
   "devDependencies": {
+    "@types/chai": "^4.0.1",
+    "@types/jquery": "^3.2.9",
+    "@types/mocha": "^2.2.41",
     "@types/node": "^8.0.14",
     "chai": "^4.1.0",
+    "grunt": "^1.0.1",
+    "grunt-cafe-mocha": "^0.1.13",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-exec": "^2.0.0",
     "mocha": "^3.4.2",
     "nodemon": "^1.11.0"
   }

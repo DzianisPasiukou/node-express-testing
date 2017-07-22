@@ -1,4 +1,4 @@
-var fortune = require('./../../src');
+var fortune = require('./../src');
 var expect = require('chai').expect;
 
 suite('Тесты печений-предсказаний', function () {
