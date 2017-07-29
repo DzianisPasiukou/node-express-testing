@@ -1,0 +1,7 @@
+{
+    "mode": "DEBUG",
+    "debug": "DEBUG",
+    "release": "RELEASE",
+    "defaultLayout": "main",
+    "port": 3000
+}

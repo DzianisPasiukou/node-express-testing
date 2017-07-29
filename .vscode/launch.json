@@ -23,7 +23,7 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceRoot}\\meadowlark.js"
+            "program": "${workspaceRoot}/meadowlark.js"
         },
         {
             "name": "Attach",
