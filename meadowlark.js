@@ -1,16 +1,6 @@
 var express = require('express');
 var fortune = require('./src');
 
-// var exphbs = require('express-handlebars');
-
-// var app = express();
-
-// app.engine('.hbs', exphbs({
-//     extname: '.hbs',
-//     defaultLayout: 'main'
-// }));
-// app.set('view engine', '.hbs');
-
 var app = express();
 // Установка механизма представления handlebars
 var handlebars = require('express-handlebars')
