@@ -1,13 +1,13 @@
 {
-  "name": "meadowlark",
+  "name": "node-express-testing",
   "version": "1.0.0",
   "description": "",
-  "main": "meadowlark.js",
+  "main": "start.js",
   "scripts": {
-    "start": "node meadowlark.js",
-    "start:watch": "nodemon --debug meadowlark.js",
+    "start": "node start.js",
+    "start:watch": "nodemon --debug start.js",
     "build": "grunt",
-    "production": "SET NODE_ENV=prod && node meadowlark.js",
+    "production": "SET NODE_ENV=prod && node start.js",
     "test": "mocha -u tdd -R spec qa/*-unit.js"
   },
   "author": "",

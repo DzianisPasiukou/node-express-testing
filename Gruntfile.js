@@ -16,7 +16,7 @@ module.exports = function (grunt) {
             options: {
                 jshintrc: true
             },
-            app: ['meadowlark.js', 'public/js/**/*.js', 'src/**/*.js'],
+            app: ['start.js', 'public/js/**/*.js', 'src/**/*.js'],
             qa: ['Gruntfile.js', 'public/qa/**/*.js', 'qa/**/*.js'],
         },
         exec: {

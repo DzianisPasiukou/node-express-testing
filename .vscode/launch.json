@@ -23,7 +23,7 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceRoot}/meadowlark.js"
+            "program": "${workspaceRoot}/start.js"
         },
         {
             "name": "Attach",
@@ -33,14 +33,14 @@
             "restart": true
         },
         {
-            "name": "Launch meadowlark.js via nodemon",
+            "name": "Launch start.js via nodemon",
             "type": "node",
             "request": "launch",
             "program": "${workspaceRoot}/node_modules/nodemon/bin/nodemon.js",
             "console": "integratedTerminal",
             "args": [
                 "--debug",
-                "${workspaceRoot}/meadowlark.js"
+                "${workspaceRoot}/start.js"
             ],
             "internalConsoleOptions": "neverOpen"
         }
